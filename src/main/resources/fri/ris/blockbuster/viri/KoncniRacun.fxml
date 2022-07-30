@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fri.ris.blockbuster.blockbusterinc.SVNakupFilmaPrekoSpleta">
+   <children>
+      <Button layoutX="14.0" layoutY="411.0" mnemonicParsing="false" text="Izhod iz aplikacije" />
+      <Button layoutX="134.0" layoutY="411.0" mnemonicParsing="false" onAction="#nazaj" prefHeight="25.0" prefWidth="67.0" text="Nazaj" />
+      <Button layoutX="694.0" layoutY="411.0" mnemonicParsing="false" onAction="#zakljuciNakup" text="Zaključi nakup" />
+      <Label layoutX="14.0" layoutY="44.0" text="Ime:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="imeRacun" layoutX="174.0" layoutY="42.0" />
+      <Label layoutX="14.0" layoutY="94.0" text="Priimek:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="priimekRacun" layoutX="174.0" layoutY="91.0" />
+      <Label layoutX="13.0" layoutY="138.0" text="Epošta:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="epostaRacun" layoutX="174.0" layoutY="136.0" />
+      <Label layoutX="12.0" layoutY="184.0" text="Domači naslov:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addressNaslov" layoutX="174.0" layoutY="182.0" />
+      <Label layoutX="12.0" layoutY="225.0" text="Pošta:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="postaNslov" layoutX="174.0" layoutY="223.0" />
+      <Label fx:id="prikazRacun" alignment="CENTER" contentDisplay="CENTER" layoutX="417.0" layoutY="36.0" prefHeight="205.0" prefWidth="367.0">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="stFilmovKoncniRacun" layoutX="417.0" layoutY="273.0" prefHeight="21.0" prefWidth="285.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="skupnaCenaKoncniRacun" layoutX="417.0" layoutY="294.0" prefHeight="21.0" prefWidth="285.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

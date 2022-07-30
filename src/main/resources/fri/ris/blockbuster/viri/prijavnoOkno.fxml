@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="content" prefHeight="500.0" prefWidth="800.0" style="-fx-background-image: url(&quot;./slike/ozadje.jpg&quot;);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fri.ris.blockbuster.blockbusterinc.PrijavnoOknoController">
+   <children>
+      <Label layoutX="221.0" layoutY="14.0" text="PRIJAVNO OKNO" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="177.0" layoutY="157.0" text="Uporabniško ime" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="220.0" text="Geslo" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="prijavnoGeslo" layoutX="406.0" layoutY="218.0">
+         <font>
+            <Font size="18.0" />
+         </font></PasswordField>
+      <TextField fx:id="prijavnoUsername" layoutX="406.0" layoutY="162.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Button layoutX="322.0" layoutY="383.0" mnemonicParsing="false" onAction="#preveriUporabnika" text="PRIJAVA">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<TabPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fri.ris.blockbuster.blockbusterinc.ZMNakupFilmaPrekoSpleta">
+  <tabs>
+    <Tab text="Filmi">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="470.0" prefWidth="786.0" style="-fx-background-image: url(&quot;./slike/ozadje.jpg&quot;);">
+               <children>
+                  <TableView fx:id="tabelaFilmov" layoutX="6.0" layoutY="14.0" prefHeight="206.0" prefWidth="784.0">
+                    <columns>
+                      <TableColumn fx:id="id" prefWidth="47.0" text="Id" />
+                      <TableColumn fx:id="imeFilma" prefWidth="148.0" text="imeFilma" />
+                        <TableColumn fx:id="opisFilma" prefWidth="222.0" text="opisFilma" />
+                        <TableColumn fx:id="zanr" prefWidth="152.0" text="Zanr" />
+                        <TableColumn fx:id="cenaFilma" prefWidth="113.0" text="cenaFilma" />
+                        <TableColumn fx:id="ocenaFilma" prefWidth="101.0" text="ocenaFilma" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="477.0" layoutY="226.0" mnemonicParsing="false" onAction="#prikaziPodrobnostiFilma" text="Podrobnosti" />
+                  <Button layoutX="235.0" layoutY="226.0" mnemonicParsing="false" onAction="#dodajFilmVKosarico" text="Dodaj v košarico" />
+                  <Button layoutX="347.0" layoutY="226.0" mnemonicParsing="false" onAction="#odstraniIzKosa" text="Odstrani iz košarice" />
+                  <Button layoutX="698.0" layoutY="432.0" mnemonicParsing="false" onAction="#koncajNakup" text="Končaj nakup" />
+                  <Label fx:id="stFilmovVKosarici" layoutX="14.0" layoutY="282.0" prefHeight="20.0" prefWidth="182.0" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Button layoutX="14.0" layoutY="432.0" mnemonicParsing="false" onAction="#izhodIzAplikacije" text="Izhod iz aplikacije" />
+                  <Label fx:id="kosaricaSkupnaCena" layoutX="14.0" layoutY="319.0" prefHeight="17.0" prefWidth="155.0" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Osebni račun">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="slikaUporabnika" fitHeight="200.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="imeOsebniRacun" layoutX="239.0" layoutY="34.0" text="Ime: ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="priimekOsebniRacun" layoutX="238.0" layoutY="69.0" text="Priimek:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="usernameOsebniRacun" layoutX="239.0" layoutY="108.0" text="Uporabniško ime: ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="epostaOsebniRacun" layoutX="240.0" layoutY="147.0" text="Epošta:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="240.0" layoutY="271.0" mnemonicParsing="false" onAction="#dodajSredstvaNaOsebniRacun" text="Dodaj sredstva na račun" />
+                  <TextField fx:id="preberiSredstva" layoutX="392.0" layoutY="271.0" />
+                  <Label fx:id="balanceOsebniRacun" layoutX="368.0" layoutY="34.0" text="Trenutno stanje na računu:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="14.0" layoutY="382.0" mnemonicParsing="false" onAction="#izhodIzAplikacije" text="Izhod iz aplikacije" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

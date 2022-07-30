@@ -1,0 +1,12 @@
+Kristjan
+Volk
+kristjan@gmail.com
+Dobravlje 92
+ 5263
+  Ime: The Da Vinci Code, Cena: 30.0€, Kolicina: 1 
+ Ime: The Blacklist, Cena: 12.5€, Kolicina: 1 
+ Ime: The Dukes of Hazzard, Cena: 16.7€, Kolicina: 1 
+
+ Stevilo filmov kupljenih: Število stvari v košarici: 3
+ Skupaj:Vaša cena zanaša 59.2€ -10% = 53.28€
+ 
